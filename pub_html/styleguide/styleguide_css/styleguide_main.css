@@ -1,0 +1,16 @@
+/* colours */
+#background-grey{
+  colour: rgb(237,237,236);
+}
+
+#light-brown{
+  color: rgb(237,215,200);
+}
+
+#multiply-red{
+  color: rgba(255,0,0, 0.7);
+}
+
+#pastel-green{
+  color: rgb(220,228,221);
+}
