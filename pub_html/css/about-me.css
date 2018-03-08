@@ -1,0 +1,50 @@
+.bio-section{
+  margin: 20vh auto 2rem auto;
+  width: 55%;
+  padding: 1rem;
+}
+
+/* #bio-text{
+  width: 70%;
+  padding: 2rem;
+  margin: 0 auto;
+} */
+
+.bio-section p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: rgba(255,0,0, 0.7);
+}
+
+@media (max-width:1241px) {
+  .bio-section p{
+    font-size: 0.9rem;
+    /* line-height: 0px; */
+  }
+  .about-me-container{
+    display: block;
+  }
+}
+
+.about-me-container{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.about-me-text-block{
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.about-me-img-block{
+  min-width: 40%;
+  margin-right: 3rem;
+}
+
+.about-me-img-block img{
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+}
