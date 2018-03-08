@@ -1,17 +1,28 @@
 #project-background-color{
-  background-color: rgb(220,228,221);
-  width: 80%;
+  /* background-color: rgb(220,228,221); */
+  width: 90%;
   padding: 0 3rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-section-intro{
-
 }
 
 .project-roles{
   width: 40%;
+  padding-right: 2rem;
   margin: 0 auto;
+}
+
+.project-roles p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.project-roles p strong{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-title-img{
@@ -22,6 +33,29 @@
 }
 
 .project-section-body{
-  position: relative;
-  margin:
+  /* position: relative; */
+  width:inherit;
+  margin: 5rem auto;
+}
+
+.text-block{
+  /* position: absolute; */
+  max-width: 50%;
+  left: 50px;
+  margin: 0 30px;
+}
+
+.work-img-block{
+  /* position: absolute; */
+  /* min-width: 15rem; */
+  /* top: 3rem; */
+  /* left: 100px; */
+  width: 600px;
+  height: 400px;
+  background-color: rgb(237,215,200);
+  margin: 1rem;
+}
+
+.img-series-container{
+  max-width: 60%;
 }

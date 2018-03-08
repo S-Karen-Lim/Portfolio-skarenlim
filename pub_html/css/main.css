@@ -6,7 +6,7 @@ body{
 
 /* orientations */
 .top-box-spacing{
-  padding-top: 10rem;
+  margin-top: 30vh;
 }
 
 /* text */
@@ -28,6 +28,8 @@ p{
   font-family: 'Nunito Sans', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 /* header stuff */
@@ -71,15 +73,16 @@ header{
   text-decoration: line-through;
 }
 
-.header-work-block{
+.header-other-nav{
   position: absolute;
   top: 3rem;
   right: 4rem;
   text-align: left;
 }
 
-.header-work-block a{
+.header-other-nav a{
   text-decoration: none;
+  color: black;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -89,15 +92,17 @@ header{
   /* transition:  */
 }
 
-.header-work-block a:hover, .header-work-block a:focus{
-  font-weight: 400;
+.header-other-nav a:hover, .header-other-nav a:focus{
+  /* font-weight: 400; */
+  color: rgba(255,0,0, 0.7);
 }
 
 /* index page */
 .index-section{
   width: 90%;
   height: 50vh;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
