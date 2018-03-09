@@ -3,7 +3,7 @@
 }
 
 .block{
-  margin: 0 1rem;
+  margin: 0.5rem;
   flex-basis: auto;
 }
 
@@ -13,7 +13,8 @@ section{
 }
 
 .title-block{
-  width: 5rem;
+  min-width: 3rem;
+  /* border-right: 1px dotted rgba(255,0,0, 0.7); */
 }
 
 .title-block p{
@@ -26,7 +27,9 @@ section{
 }
 
 .code-block{
-  min-width: 20rem;
+  width: 20rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
 }
 
 /* grid */
@@ -44,11 +47,17 @@ section{
 }
 
 /* colours */
+#colour-block-container{
+  /* display: block; */
+}
 .colourBlock{
-  padding: 1rem;
+  width: 150px;
+  height: 150px;
+  padding: 0.5rem;
   box-shadow: 0px 8px 12px rgba(199,139,60, 0.3);
   text-align: center;
-  display: block;
+  margin-bottom: 1rem;
+  vertical-align: middle;
 }
 .background-grey{
   background-color: rgb(237,237,236);
@@ -69,4 +78,8 @@ section{
 .darkSlateGrey{
   background-color: rgb(48,48,48);
   color: white;
+}
+
+@media (max-width:) {
+
 }

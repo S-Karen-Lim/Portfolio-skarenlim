@@ -41,9 +41,9 @@ p{
 /* button styling */
 .default-button{
   font-family: 'Montserrat', sans-serif;
-
   padding: 1rem 2rem;
   margin: 0.5rem;
+  text-decoration: none;
   border: none;
   background-color: white;
   border-radius: 25px;
@@ -75,7 +75,7 @@ header{
   background-color: white;
   /* background-blend-mode: darken; */
   width: 100vw;
-  height: 70px;
+  height: 62px;
   background-size: contain;
 }
 
@@ -144,4 +144,9 @@ header{
   position: absolute;
   bottom: 0;
   left: 50%;
+}
+
+#see-projects-space{
+  margin-top: 10vh;
+  text-align: center;
 }
