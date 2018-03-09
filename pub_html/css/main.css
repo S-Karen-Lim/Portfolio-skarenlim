@@ -38,6 +38,26 @@ p{
   line-height: 30px;
 }
 
+/* button styling */
+.default-button{
+  font-family: 'Montserrat', sans-serif;
+
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 8px 12px rgba(199,139,60, 0.3);
+  color: rgba(255,0,0, 0.7);
+  /* tansition */
+}
+
+.default-button:hover{
+  box-shadow: none;
+  background-color: rgba(255,0,0, 0.7);
+  color: white;
+}
+
 /* header stuff */
 header{
   position: sticky;
