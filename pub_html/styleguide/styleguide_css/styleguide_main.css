@@ -1,3 +1,48 @@
+.header-styleguide{
+  text-align: center;
+}
+
+.block{
+  margin: 0 1rem;
+  flex-basis: auto;
+}
+
+section{
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.title-block{
+  width: 5rem;
+}
+
+.title-block p{
+  font-weight: 400;
+  /* text-align: right; */
+}
+
+.element-block{
+  min-width: 40rem;
+}
+
+.code-block{
+  min-width: 20rem;
+}
+
+/* grid */
+.gridContainer{
+  background-color: white;
+}
+.gridBlock{
+  background-color: rgba(255,0,0, 0.7);
+  padding: 1rem;
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+}
+.gridBlock h3{
+  color: white;
+}
+
 /* colours */
 #background-grey{
   colour: rgb(237,237,236);
