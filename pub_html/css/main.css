@@ -26,8 +26,10 @@ h2{
 }
 
 h3{
-  font-weight: 300;
+  color:  rgba(255,0,0, 0.7);
+  font-weight: 400;
   font-size: 0.9rem;
+  font-style: oblique;
 }
 
 p{
@@ -132,9 +134,10 @@ header{
   position: relative;
 }
 
-#me-img{
+#me-img video{
   background-color: rgb(237,215,200);
   position: absolute;
+  background-size: cover;
   left: 10%;
   width: 50%;
   height: 50vh;
@@ -149,4 +152,54 @@ header{
 #see-projects-space{
   margin-top: 10vh;
   text-align: center;
+}
+
+/* Work overview section */
+#feature-work1-section{
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    padding: 2rem;
+    margin: 10vh auto 1rem auto;
+    border: 0.5px solid rgba(255,0,0, 0.7);
+}
+
+.work-overview-block{
+  max-width: 40%;
+  height: inherit;
+  justify-content: space-between;
+  vertical-align: middle;
+  /* position: relative; */
+}
+
+.work-facts-container{
+  /* position: absolute;
+  bottom: 1rem; */
+  align-content: space-around;
+}
+.work-facts-block{
+  min-width: 15rem;
+  margin-right: 2rem;
+}
+
+.work-facts-block p{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.work-img-block{
+  min-width: 50%;
+  margin-left: 2rem;
+  vertical-align: middle;
+}
+
+.work-img-block img{
+  width: 100%;
+  height: auto;
+}
+
+.see-more-block{
+  width: 90vw;
+  justify-content: center;
+  margin: 2rem auto;
 }
