@@ -1,61 +1,145 @@
 #project-background-color{
-  /* background-color: rgb(220,228,221); */
+  background-color: white;
   width: 90%;
   padding: 0 3rem;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 8px 12px rgba(150, 150, 150);
 }
 
 .project-section-intro{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10vh 0;
+  border-bottom: 1px solid rgba(255,0,0, 0.7);
+}
+
+.title-block h1{
+  font-size: 6rem;
+  text-align: right;
+  vertical-align: middle;
+  color: rgb(48,48,48);
 }
 
 .project-roles{
-  width: 40%;
-  padding-right: 2rem;
+  min-width: 50%;
+  padding-left: 4rem;
   margin: 0 auto;
 }
 
 .project-roles p {
   font-size: 1rem;
   font-weight: 300;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 
 .project-roles p strong{
   font-family: 'Montserrat', sans-serif;
+  color: rgba(255,0,0, 0.7);
 }
 
 .project-title-img{
-  background-color: rgb(237,215,200);
   width: 60%;
-  height: 50vh;
   margin: 0 auto;
+}
+
+.project-title-img img{
+  width: 100%;
+  height:auto;
 }
 
 .project-section-body{
   /* position: relative; */
-  width:inherit;
+  width: 90%;
   margin: 5rem auto;
 }
 
 .text-block{
-  /* position: absolute; */
-  max-width: 50%;
-  left: 50px;
-  margin: 0 30px;
+  /* max-width: 40rem; */
+  min-width: 40%;
+  margin: 1rem 30px;
 }
 
-.work-img-block{
-  /* position: absolute; */
+.project-img-block{
   /* min-width: 15rem; */
-  /* top: 3rem; */
-  /* left: 100px; */
-  width: 600px;
-  height: 400px;
-  background-color: rgb(237,215,200);
   margin: 1rem;
 }
 
+.project-img-block img{
+  width: 100%;
+  height: auto;
+}
+
 .img-series-container{
-  max-width: 60%;
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.img-description{
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-style: oblique;
+  background-color: white;
+}
+
+.conclusion-textblock{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10vh;
+}
+
+@media (max-width: 1280px) {
+  .title-block h1{
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  .project-roles{
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .project-section-body{
+    display: block;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .text-block{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img-series-container{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .project-img-block{
+    width: 80%;
+  }
+  #inspiration-img{
+    width: 100%;
+    order: -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .title-block h1{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  .text-block{
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .img-series-container{
+    display: block;
+  }
+  .project-img-block{
+    display: block;
+    min-width: 15rem;
+    margin: 0.5rem auto;
+  }
 }
