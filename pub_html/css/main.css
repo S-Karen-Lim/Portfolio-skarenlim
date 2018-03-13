@@ -201,7 +201,7 @@ header{
 }
 
 .work-img-block{
-  min-width: 40rem;
+  width: 50rem;
   margin-left: 2rem;
   /* position: relative; */
 }
@@ -231,5 +231,6 @@ header{
   }
   .work-img-block{
     order:-1;
+    min-width: 80%;
   }
 }
