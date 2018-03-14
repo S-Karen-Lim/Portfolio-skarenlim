@@ -254,6 +254,21 @@ footer{
    aria-hidden: 'false';
 }*/
 
+/* Resume html page */
+.resume-section{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#resume-header-block{
+  width: 40%;
+  margin-right: 2rem;
+}
+#resume-block{
+  width: 45%;
+  height: 80vh;
+}
+
 @media (max-width:1150px) {
   .work-facts-container{
     display: block;
