@@ -126,6 +126,35 @@ header{
   color: rgba(255,0,0, 0.7);
 }
 
+/* Footer stuff */
+footer{
+  margin-top: 10vh;
+  background: white;
+  padding: 2rem;
+}
+
+.footer-container{
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.footer-container .block{
+  text-align: center;
+}
+
+.footer-container a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: oblique;
+}
+
+.footer-container a:hover, .footer-container a:focus{
+  color: rgba(255,0,0, 0.7);
+}
+
 /* index page */
 .index-section{
   width: 90%;
