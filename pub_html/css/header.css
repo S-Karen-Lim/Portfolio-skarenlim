@@ -1,0 +1,164 @@
+.section-header{
+  background-color: #222222;
+  padding: 0.2rem 0;
+  position: relative;
+}
+
+.header-container{
+  margin: 1rem auto 0.5rem auto;
+}
+
+.nav-main{
+  margin: 0;
+}
+
+.nav-left{
+  position: relative;
+  left: 0;
+  top: 0.2rem;
+}
+
+.nav-center{
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-center nav {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+}
+
+.nav-center nav a{
+  color: #c78b3c;
+  padding-bottom: 0.6rem;
+}
+
+.nav-center nav a:hover{
+  color: #fabe6f;
+  transition: 0.2s;
+}
+
+.nav-main a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1.3px;
+  padding: 0.3rem 0.7rem;
+  margin: 0rem 0.4rem;
+}
+
+.nav-active{
+  color: #eeeeee!important;
+  border-bottom: 4px solid #c78b3c;
+}
+
+.nav-home{
+  /* font-size: 1.6rem;
+  color: #c78b3c;
+  font-weight: 800;
+  letter-spacing: 2.5px; */
+  width: auto;
+  height: 1.5rem;
+}
+
+.nav-my-cart{
+  height: 1.5rem;
+  width: auto;
+  vertical-align: bottom;
+}
+
+.nav-right{
+  position: relative;
+}
+
+.nav-right a{
+  color: #C2B59B;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+}
+
+.hidden{
+  visibility: hidden;
+  display: none;
+}
+
+#nav-center-toggle img{
+  width: 1.4rem;
+  height: auto;
+}
+
+.hamburger-menu-container{
+  margin-top: 0rem!important;
+}
+
+@media screen and (min-width: 1100px){
+  #nav-center-toggle{
+    display: none!important;
+  }
+
+  #nav-center-toggle .hidden{
+    display: inline-block!important;
+  }
+
+  .side-nav #side-nav-close-button{
+    display: none;
+  }
+
+  #main-nav-items{
+    display: block!important;
+    visibility: visible!important;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  #nav-center-toggle{
+    float: left;
+    display: inline;
+  }
+
+  .side-nav{
+    display: none;
+    height: 100%;
+    width: 15rem;
+    position: fixed!important;
+    z-index: 1000;
+    top: 0;
+    right:0;
+    background-color: #222222;
+    padding-top: 30px;
+    transition: 0.5s;
+  }
+
+  .side-nav a{
+    display: block;
+    transition: 0.5s;
+  }
+
+  .side-nav a:hover, .side-nav a:focus, .side-nav a:active{
+    color: white!important;
+  }
+
+  .hamburger-menu-container{
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+  .nav-center{
+    position:fixed;
+    top:0;
+    left:0;
+  }
+
+  .mycart-text{
+    display: none;
+  }
+}
+/* references
+
+https://www.w3schools.com/css/css_align.asp
+
+ */

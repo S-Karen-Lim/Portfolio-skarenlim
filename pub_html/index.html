@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,700i|Nunito+Sans:300,300i,400,400i" rel="stylesheet">
 
   <title>Karen Lim - Portfolio: Home</title>
@@ -18,12 +19,17 @@
 <body>
   <header>
     <nav class="header-nav container">
+
+      <a href="javascript:void(0)" class="hidden hamburger-menu-container" aria-hidden="true"  id="nav-center-toggle" aria-controls="main-nav-items">
+        <img src="img/hamburger.png" alt="icon for hamburger menu">
+      </a>
       <div class="header-white-background">
       </div>
       <div class="header-home-nav block">
         <a href="index.html">Karen Lim</a>
       </div>
       <div class="header-other-nav block">
+        <a href="javascript:void(0)" id="side-nav-close-button" class="hidden" aria-hidden="true">&times;</a>
         <a href="index.html">Home</a>
         <a href="stranger-danger.html">Stranger Danger</a>
         <a href="borneo-sporenburg.html">Borneo Sporenburg</a>
@@ -32,6 +38,7 @@
         <!-- <a href="contact.html">Contact</a> -->
       </div>
     </nav>
+    <script src="js/header-hamburger.js"></script>
   </header>
 
 <section class="index-section container top-box-spacing">
