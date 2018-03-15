@@ -40,6 +40,17 @@ p{
   line-height: 30px;
 }
 
+.intext-link{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: rgba(255,0,0, 0.7);
+}
+
+.intext-link:hover, .intext-link:focus{
+  text-decoration: line-through;
+}
+
 /* button styling */
 .default-button{
   font-family: 'Montserrat', sans-serif;
@@ -254,6 +265,46 @@ footer{
    aria-hidden: 'false';
 }*/
 
+/* Resume html page */
+.resume-section{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#resume-header-block{
+  width: 45%;
+  margin-right: 1rem;
+}
+#resume-header-block h1{
+  /* text-align: right; */
+  font-size: 4rem;
+  /* color:  */
+}
+#resume-block{
+  min-width: 45%;
+  max-width: 60%;
+  padding: 3rem;
+  background-color: white;
+  height: 80vh;
+}
+
+@media (max-width: 1500px) {
+  .resume-section{
+    display: block;
+    width: 100%;
+  }
+  #resume-header-block{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    #resume-block{
+      max-width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+      height: 50vh;
+    }
+}
 @media (max-width:1150px) {
   .work-facts-container{
     display: block;
