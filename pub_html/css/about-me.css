@@ -18,6 +18,10 @@
   color: rgba(255,0,0, 0.7);
 }
 
+.about-me-text-block .default-button{
+  margin-top: 2rem;
+}
+
 @media (max-width:1241px) {
   .bio-section p{
     font-size: 0.9rem;
