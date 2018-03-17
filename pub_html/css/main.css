@@ -40,6 +40,11 @@ p{
   line-height: 30px;
 }
 
+p strong{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255,0,0, 0.7);
+}
+
 .intext-link{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
