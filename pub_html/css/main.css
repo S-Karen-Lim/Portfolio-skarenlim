@@ -78,8 +78,8 @@ p strong{
 
 /* header stuff */
 header{
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   height: 2rem;
   z-index: 1;
   /* overflow: hidden; */
@@ -92,16 +92,17 @@ header{
 .header-white-background{
   position: absolute;
   background-color: white;
-  /* background-blend-mode: darken; */
   width: 100vw;
   height: 62px;
   background-size: contain;
+  z-index: 2;
 }
 
 .header-home-nav{
   position: absolute;
   top: 3rem;
   left: 3rem;
+  z-index: 3;
 }
 
 .header-home-nav a{
@@ -118,14 +119,27 @@ header{
   text-decoration: line-through;
 }
 
-.header-other-nav{
+.header-right-nav{
   position: absolute;
-  top: 3rem;
+  top: -160px;
   right: 4rem;
   text-align: left;
+  background-color: white;
+  padding: 2rem;
+  z-index:1;
+  -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    transition: .5s ease-in;
 }
 
-.header-other-nav a{
+.active{
+  top: 60px;
+  box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
+}
+
+.header-right-nav a{
   text-decoration: none;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
@@ -137,11 +151,72 @@ header{
   /* transition:  */
 }
 
-.header-other-nav a:hover, .header-other-nav a:focus{
+.header-right-nav a:hover, .header-right-nav a:focus{
   /* font-weight: 400; */
   color: rgba(255,0,0, 0.7);
 }
 
+.hamburger-btn{
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 3rem;
+  right: 150px;
+  text-align: left;
+  z-index: 3;
+}
+
+.hamburger-btn:focus{
+  outline:none;
+}
+
+.hamburger-icon{
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 30px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.hamburger-icon::before, .hamburger-icon::after{
+  position: absolute;
+  content: '';
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 40px;
+  height: 5px;
+}
+
+.hamburger-icon::before{
+  top:-10px;
+  transition: all 0.3s;
+}
+.hamburger-icon::after{
+  top:10px;
+}
+
+.hamburger-icon:hover, .hamburger-icon:focus{
+  width: 40px;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.hamburger-btn.toggle .hamburger-icon{
+  background: transparent;
+}
+
+.hamburger-btn.toggle .hamburger-icon:before{
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger-btn.toggle .hamburger-icon:after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////// */
 /* Footer stuff */
 footer{
   margin-top: 10vh;
@@ -171,45 +246,53 @@ footer{
   color: rgba(255,0,0, 0.7);
 }
 
-/* index page */
-.index-section{
-  width: 90%;
-  height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
 
-#me-img video{
-  background-color: rgb(237,215,200);
-  position: absolute;
-  background-size: cover;
-  left: 10%;
-  width: 50%;
-  height: 50vh;
-}
-
-.index-title{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-}
-
-#see-projects-space{
-  margin-top: 10vh;
-  text-align: center;
-}
+/* ///////////////////////////////////////////////////////////////// */
 
 /* Work overview section */
 #feature-work1-section, #feature-work2-section{
     background-color: white;
-    margin: 10vh 0 1rem 0;
+    width: 90%;
+    margin: 10vh auto 1rem auto;
+    position:relative;
+    /* box-shadow: */
 }
 
+/* citation: https://paulund.co.uk/learn-css-box-shadow */
+#feature-work1-section:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 90%;
+  margin: 0 auto;
+  bottom: 15px;
+  left: 10px;
+  width: 90%;
+  top: 80%;
+  background: #777;
+  box-shadow: 0 15px 10px rgba(100, 100, 100, 0.5);
+  transform: rotate(-1deg);
+}
+
+#feature-work2-section:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 90%;
+  margin: 0 auto;
+  bottom: 15px;
+  right: 10px;
+  width: 90%;
+  top: 80%;
+  background: #777;
+  box-shadow: 0 15px 10px rgba(100, 100, 100, 0.5);
+  transform: rotate(1deg);
+}
 .featured-work-container{
   width: 95%;
   margin: 3rem auto;
-  box-sizing: border-box;
   padding: 1rem;
   /* border: 0.5px solid rgb(237,215,200); */
 }
@@ -218,6 +301,7 @@ footer{
 .see-more-block{
   /* display: none; */
   /* opacity: 0; */
+  display: block;
   margin: 3rem auto;
 }
 
@@ -238,6 +322,7 @@ footer{
   width: 20rem;
   margin-right: 2rem;
   display: inline-block;
+  vertical-align: top;
 }
 
 .work-facts-block p{
@@ -270,6 +355,7 @@ footer{
    aria-hidden: 'false';
 }*/
 
+/* ///////////////////////////////////////////////////////////////// */
 /* Resume html page */
 .resume-section{
   width: 70%;
@@ -312,7 +398,18 @@ footer{
 }
 @media (max-width:1150px) {
   .work-facts-container{
-    display: block;
+    margin: 2rem auto;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  .work-overview-block{
+    min-width: 80%;
+    margin: 1rem auto;
+  }
+  .work-facts-block{
+    width: 40%;
+    vertical-align: top;
+    margin: 1rem 1rem 1rem auto;
   }
   .work-img-block{
     order:-1;
