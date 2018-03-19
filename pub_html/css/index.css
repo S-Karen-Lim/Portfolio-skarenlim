@@ -1,0 +1,62 @@
+/* index page */
+.index-section{
+  width: 100%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.crazy-letter{
+  position: fixed;
+  z-index: -2;
+}
+
+.crazy-letter p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 700px;
+  color: rgba(255, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
+}
+
+#crazy-s{
+  top: 50%;
+  left: -150px;
+  transform: rotate(-10deg);
+  /* animation: 0.3s ease-in crazy-s-transform; */
+}
+
+#crazy-k{
+  top: 20%;
+  right: 30%;
+  transform: rotate(10deg);
+}
+
+#crazy-l{
+  top: 60%;
+  right: 1%;
+  transform: rotate(-10deg);
+}
+
+.index-title{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+#see-projects-space{
+  margin-top: 10vh;
+  text-align: center;
+}
+
+@keyframes crazy-s-transform {
+  from{
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
