@@ -46,6 +46,138 @@ section{
   color: white;
 }
 
+/* header stuff */
+header{
+  /* position: sticky; */
+  /* top: 0; */
+  height: 2rem;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+.header-white-background{
+  width: 100%;
+}
+
+.header-home-nav{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 3;
+}
+
+.header-home-nav a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(255,0,0, 0.7);
+  letter-spacing: 2px;
+    /* transition:  */
+}
+
+.header-home-nav a:hover, .header-home-nav a:focus{
+  text-decoration: line-through;
+} 
+
+.header-right-nav2{
+  position: absolute;
+  top: -160px;
+  right: 4rem;
+  text-align: left;
+  background-color: white;
+  padding: 2rem;
+  z-index:1;
+  -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    transition: .5s ease-in;
+  display: none;
+}
+
+.active{
+  top: 60px;
+  box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
+  display: block;
+}
+
+.header-right-nav2 a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+    font-style: oblique;
+  display: block;
+  align-self: flex-end;
+  display: none;
+  /* transition:  */
+}
+
+.header-right-nav2 a:hover, .header-right-nav2 a:focus{
+  /* font-weight: 400; */
+  color: rgba(255,0,0, 0.7);
+}
+
+.hamburger-btn2{
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 3rem;
+  right: 150px;
+  text-align: left;
+  z-index: 3;
+}
+
+.hamburger-btn2:focus{
+  outline:none;
+}
+
+.hamburger-icon{
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 30px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.hamburger-icon::before, .hamburger-icon::after{
+  position: absolute;
+  content: '';
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 40px;
+  height: 5px;
+}
+
+.hamburger-icon::before{
+  top:-10px;
+  transition: all 0.3s;
+}
+.hamburger-icon::after{
+  top:10px;
+}
+
+.hamburger-icon:hover, .hamburger-icon:focus{
+  width: 40px;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.hamburger-btn2.toggle .hamburger-icon{
+  background: transparent;
+}
+
+.hamburger-btn2.toggle .hamburger-icon:before{
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger-btn2.toggle .hamburger-icon:after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 /* colours */
 #colour-block-container{
   /* display: block; */

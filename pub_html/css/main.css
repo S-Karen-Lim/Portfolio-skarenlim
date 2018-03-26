@@ -132,11 +132,13 @@ header{
     -o-transition: .5s ease-in;
     -ms-transition: .5s ease-in;
     transition: .5s ease-in;
+    display: none;
 }
 
 .active{
   top: 60px;
   box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
+  display: block;
 }
 
 .header-right-nav a{
