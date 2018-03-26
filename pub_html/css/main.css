@@ -100,8 +100,8 @@ header{
 
 .header-home-nav{
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 40px;
+  left: 2rem;
   z-index: 3;
 }
 
@@ -132,7 +132,6 @@ header{
     -o-transition: .5s ease-in;
     -ms-transition: .5s ease-in;
     transition: .5s ease-in;
-    display: none;
 }
 
 .active{
@@ -147,14 +146,12 @@ header{
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
-    font-style: oblique;
+  font-style: oblique;
   display: block;
   align-self: flex-end;
-  /* transition:  */
 }
 
 .header-right-nav a:hover, .header-right-nav a:focus{
-  /* font-weight: 400; */
   color: rgba(255,0,0, 0.7);
 }
 
@@ -162,8 +159,8 @@ header{
   border: none;
   background: transparent;
   position: absolute;
-  top: 3rem;
-  right: 150px;
+  top: 55px;
+  right: 90px;
   text-align: left;
   z-index: 3;
 }

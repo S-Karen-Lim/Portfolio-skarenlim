@@ -76,7 +76,7 @@
     </div>
     <div class="block code-block">
       <p>
-        <strong>CSS Selector:</strong></p>
+        <strong>CSS Selectors Used:</strong></p>
         <p class="id-cssSelector">.container, .block, .gridContainer, .gridBlock</p>
       <code>  &lt;div class=&quot;gridContainer&quot;&gt;<br/>
         &lt;div class=&quot;container&quot;&gt;<br/>
@@ -103,7 +103,7 @@
       <p>H3 </p><h3>Heading 3</h3>
     </div>
     <div class="block code-block">
-      <p><strong>CSS Selectors:</strong></p>
+      <p><strong>CSS Selectors Used:</strong></p>
       <p class="class-cssSelector">
         h1, h2, h3
         <!-- h4 -->
@@ -128,7 +128,7 @@
       <button type="button" class="default-button">I am a button</button>
     </div>
     <div class="block code-block">
-      <p><strong>CSS Selector:</strong> </p>
+      <p><strong>CSS Selectors Used:</strong> </p>
       <p class="class-cssSelector">.default-button</p>
       <code>&lt;button type=&quot;button&quot; class=&quot;default-button&quot;&gt;default button&lt;/a&gt;</code>
     </div>
@@ -145,7 +145,7 @@
         <a class="intext-link">I am a text link</a>
       </div>
       <div class="block code-block">
-        <p><strong>CSS Selector:</strong> </p>
+        <p><strong>CSS Selectors Used:</strong> </p>
         <p class="class-cssSelector">.intext-link</p>
         <code>&lt;a class=&quot;intext-link&quot;&gt;text link&lt;/a&gt;</code>
       </div>
@@ -161,11 +161,11 @@
     <header>
       <div class="header-white-background"></div>
         <nav class="header-nav container">
-          <div class="header-home-nav block">
+          <div class="header-home-nav block" id="header-nav-2">
             <a href="#">Karen Lim</a>
           </div>
 
-          <div class="block header-right-nav2" aria-hidden="true">
+          <div class="block header-right-nav" id="header-right-nav-2" aria-hidden="true">
             <a href="#">Home</a>
             <a href="#">Stranger Danger</a>
             <a href="#">Borneo Sporenburg</a>
@@ -179,7 +179,29 @@
     </header>
   </div>
   <div class="block code-block">
+    <p><strong>CSS Selectors Used:</strong> </p>
+    <p class="class-cssSelector">.header-nav .header-home-nav .header-right-nav .hamburger-btn .hamburger-icon</p>
+    <code>
+          &lt;header&gt;<br />
+            &lt;div class=&quot;header-white-background&quot;&gt;&lt;/div&gt;<br />
+              &lt;nav class=&quot;header-nav container&quot;&gt;<br />
+                &lt;div class=&quot;header-home-nav block&quot;&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;Karen Lim&lt;/a&gt;<br />
+                &lt;/div&gt;<br />
 
+                &lt;div class=&quot;block header-right-nav2&quot; aria-hidden=&quot;true&quot;&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;Stranger Danger&lt;/a&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;Borneo Sporenburg&lt;/a&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;<br />
+                  &lt;a href=&quot;#&quot;&gt;Styleguide&lt;/a&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;button class=&quot;block hamburger-btn2&quot;&gt;<br />
+                  &lt;span class=&quot;hamburger-icon&quot;&gt;&lt;/span&gt;<br />
+                &lt;/button&gt;<br />
+              &lt;/nav&gt;<br />
+          &lt;/header&gt;<br />
+    </code>
   </div>
 </section>
 
@@ -198,7 +220,7 @@
     </div>
   </div>
   <div class="block code-block">
-    <p><strong>CSS Selectors:</strong></p>
+    <p><strong>CSS Selectors Used:</strong></p>
     <p class="id-cssSelector"> .background-grey .darkSlateGrey .multiply-red .light-brown</p>
     <code>
       &lt;div class=&quot;colourBlock multiply-red&quot;&gt;<br />
