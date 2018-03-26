@@ -60,22 +60,7 @@ section{
   font-size: 1.5rem;
 }
 
-#header-right-nav2{
-  position: absolute;
-  right: 4rem;
-  text-align: left;
-  background-color: white;
-  padding: 2rem;
-  z-index:1;
-  -webkit-transition: .5s ease-in;
-    -moz-transition: .5s ease-in;
-    -o-transition: .5s ease-in;
-    -ms-transition: .5s ease-in;
-    transition: .5s ease-in;
-  display: none;
-}
-
-.header-right-nav2 a{
+#header-right-nav2 a{
   text-decoration: none;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
@@ -86,11 +71,6 @@ section{
   align-self: flex-end;
   display: none;
   /* transition:  */
-}
-
-.header-right-nav2 a:hover, .header-right-nav2 a:focus{
-  /* font-weight: 400; */
-  color: rgba(255,0,0, 0.7);
 }
 
 .hamburger-btn2{

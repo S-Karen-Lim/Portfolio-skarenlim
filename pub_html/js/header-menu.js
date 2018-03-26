@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 //for the styleguide
 
-var rightNav2 = document.querySelector(".header-right-nav2");
+var rightNav2 = document.querySelector("#header-right-nav2");
 
 $(document).ready(function(){
   $('.hamburger-btn2').click(function(){
