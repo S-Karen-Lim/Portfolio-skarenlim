@@ -48,12 +48,19 @@ section{
 }
 
 /* header stuff */
+#header2{
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
 .header-white-background{
   width: 100%;
+  z-index: 0;
 }
 
 .header-nav{
   position: relative;
+  z-index: 0;
 }
 
 #header-home-nav-2{
@@ -61,6 +68,7 @@ section{
   top: 40px;
   left: 2rem;
   z-index: 3;
+  z-index: 0;
 }
 
 #header-home-nav-2 a{
@@ -68,10 +76,12 @@ section{
   position: relative;
   top: auto;
   right:auto;
+  z-index: 0;
 }
 
 #header-right-nav-2{
   display: none;
+  z-index: 0;
 }
 
 #header-right-nav2 a{
@@ -84,17 +94,16 @@ section{
   display: block;
   align-self: flex-end;
   display: none;
-  /* transition:  */
 }
 
 .hamburger-btn2{
   position: absolute;
   border: none;
   background: transparent;
-  top: 55px;
+  top: 45px;
   right: 90px;
   text-align: left;
-  z-index: 3;
+  z-index: 0;
 }
 
 .hamburger-btn2:focus{
