@@ -7,12 +7,15 @@ $(document).ready(function(){
     $('.header-right-nav').toggleClass('active');
     $('.hamburger-btn').toggleClass('toggle');
 
-    //if that when the hamburger is clicked and the right nav is set to hidden, make it display.
-  //   if(rightNavAttribute['aria-hidden'].value == "true"){
-  //      document.getElementById(id).setAttribute("aria-hidden", "false");
-  //    } else {
-  //   document.getElementById(id).setAttribute("aria-hidden", "true");
-  //     }
+    // citation: http://www.davidmacd.com/blog/toggle-aria-expanded-javascript.html
+    var ariaAttribute = document.querySelector(".header-right-nav").getAttribute("aria-hidden");
+    if(ariaAttribute == "true"){
+      ariaAttribute = "false";
+    }
+    else{
+      ariaAttribute = "true";
+    }
+    document.querySelector(".header-right-nav").setAttribute("aria-hidden", ariaAttribute);
   })
 })
 
@@ -26,17 +29,14 @@ $(document).ready(function(){
     $('#header-right-nav-2').toggleClass('active');
     $('.hamburger-btn2').toggleClass('toggle');
 
-    //if that when the hamburger is clicked and the right nav is set to hidden, make it display.
-    if(rightNav2.attributeList.contains("true")){
-      rightNav2.classList.remove("hidden");
-      rightNav2.setAttribute("aria-hidden", "false");
-
-      rightNav2.style.display = "block";
+    var ariaAttribute = document.getElementById("#header-right-nav-2").getAttribute("aria-hidden");
+    if(ariaAttribute == "true"){
+      ariaAttribute = "false";
     }
     else{
-      rightNav2.attributeList.add("false");
-      rightNav2.setAttribute("aria-hidden", "true");
-      rightNav2.style.display = "none";
+      ariaAttribute = "true";
     }
+    document.querySelector(".header-right-nav").setAttribute("aria-hidden", ariaAttribute);
+
   })
 })

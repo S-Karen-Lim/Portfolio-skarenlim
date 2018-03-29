@@ -135,6 +135,11 @@ section{
   color: white;
 }
 
+/* sample content section */
+/* #content-sample-section .element-block{
+  min-width: 80%;
+} */
+
 @media (max-width: 700px) {
     #header-home-nav-2{
       left: 20px;

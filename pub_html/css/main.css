@@ -260,7 +260,7 @@ footer{
 /* ///////////////////////////////////////////////////////////////// */
 
 /* Work overview section */
-#feature-work1-section, #feature-work2-section{
+#feature-work1-section, .feature-work2-section{
     background-color: white;
     width: 90%;
     margin: 10vh auto 1rem auto;
@@ -285,7 +285,7 @@ footer{
   transform: rotate(-1deg);
 }
 
-#feature-work2-section:before
+.feature-work2-section:before
 {
   z-index: -1;
   position: absolute;
@@ -349,21 +349,7 @@ footer{
 .work-img-block img{
   width: 100%;
   height: auto;
-  /* transition: opacity .35s ease;
 }
-/*
-.work-img-block:hover img{
-  /* filter:blur(4px); */
-}
-
-/* .work-img-block:hover .see-more-block{
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  opacity: 1;
-  z-index: 1;
-   aria-hidden: 'false';
-}*/
 
 /* ///////////////////////////////////////////////////////////////// */
 /* Resume html page */
