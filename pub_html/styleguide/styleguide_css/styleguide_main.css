@@ -52,12 +52,26 @@ section{
   width: 100%;
 }
 
-#header-nav{
-  top: 35px;
+.header-nav{
+  position: relative;
 }
 
-#header-nav-2 a{
+#header-home-nav-2{
+  position: absolute;
+  top: 40px;
+  left: 2rem;
+  z-index: 3;
+}
+
+#header-home-nav-2 a{
   font-size: 1.5rem;
+  position: relative;
+  top: auto;
+  right:auto;
+}
+
+#header-right-nav-2{
+  display: none;
 }
 
 #header-right-nav2 a{
@@ -74,61 +88,17 @@ section{
 }
 
 .hamburger-btn2{
+  position: absolute;
   border: none;
   background: transparent;
-  position: absolute;
-  top: 3rem;
-  right: 150px;
+  top: 55px;
+  right: 90px;
   text-align: left;
   z-index: 3;
 }
 
 .hamburger-btn2:focus{
   outline:none;
-}
-
-.hamburger-icon{
-  background-color: rgba(255, 0, 0, 0.7);
-  width: 30px;
-  height: 5px;
-  display: block;
-  position: absolute;
-  transition: all 0.3s;
-}
-
-.hamburger-icon::before, .hamburger-icon::after{
-  position: absolute;
-  content: '';
-  background-color: rgba(255, 0, 0, 0.7);
-  width: 40px;
-  height: 5px;
-}
-
-.hamburger-icon::before{
-  top:-10px;
-  transition: all 0.3s;
-}
-.hamburger-icon::after{
-  top:10px;
-}
-
-.hamburger-icon:hover, .hamburger-icon:focus{
-  width: 40px;
-  background-color: rgba(0, 0, 255, 0.7);
-}
-
-.hamburger-btn2.toggle .hamburger-icon{
-  background: transparent;
-}
-
-.hamburger-btn2.toggle .hamburger-icon:before{
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.hamburger-btn2.toggle .hamburger-icon:after{
-  top: 0;
-  transform: rotate(-45deg);
 }
 
 /* colours */
@@ -165,6 +135,15 @@ section{
   color: white;
 }
 
-@media (max-width:) {
-
+@media (max-width: 700px) {
+    #header-home-nav-2{
+      left: 20px;
+    }
+    #header-home-nav-2 a{
+      font-size: 1rem;
+    }
+    .hamburger-btn2{
+      top: 40px;
+      right: 40px;
+    }
 }

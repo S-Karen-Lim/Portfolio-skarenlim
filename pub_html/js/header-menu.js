@@ -19,11 +19,11 @@ $(document).ready(function(){
 
 //for the styleguide
 
-var rightNav2 = document.querySelector("#header-right-nav2");
+var rightNav2 = document.querySelector("#header-right-nav-2");
 
 $(document).ready(function(){
   $('.hamburger-btn2').click(function(){
-    $('.header-right-nav2').toggleClass('active');
+    $('#header-right-nav-2').toggleClass('active');
     $('.hamburger-btn2').toggleClass('toggle');
 
     //if that when the hamburger is clicked and the right nav is set to hidden, make it display.

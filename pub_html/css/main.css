@@ -47,7 +47,7 @@ p strong{
 
 .intext-link{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   color: rgba(255,0,0, 0.7);
 }
@@ -103,6 +103,11 @@ header{
   top: 40px;
   left: 2rem;
   z-index: 3;
+    -webkit-transition: .5s ease-in;
+      -moz-transition: .5s ease-in;
+      -o-transition: .5s ease-in;
+      -ms-transition: .5s ease-in;
+      transition: .5s ease-in;
 }
 
 .header-home-nav a{
@@ -112,6 +117,11 @@ header{
   text-decoration: none;
   color: rgba(255,0,0, 0.7);
   letter-spacing: 2px;
+    -webkit-transition: .5s ease-in;
+      -moz-transition: .5s ease-in;
+      -o-transition: .5s ease-in;
+      -ms-transition: .5s ease-in;
+      transition: .5s ease-in;
     /* transition:  */
 }
 
@@ -121,7 +131,7 @@ header{
 
 .header-right-nav{
   position: absolute;
-  top: -160px;
+  top: -170px;
   right: 4rem;
   text-align: left;
   background-color: white;
@@ -176,6 +186,7 @@ header{
   display: block;
   position: absolute;
   transition: all 0.3s;
+    margin-top: 10px;
 }
 
 .hamburger-icon::before, .hamburger-icon::after{
@@ -226,6 +237,7 @@ footer{
 .footer-container{
   margin: 0 auto;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-container .block{
@@ -234,7 +246,6 @@ footer{
 
 .footer-container a{
   text-decoration: none;
-  color: black;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -242,7 +253,7 @@ footer{
 }
 
 .footer-container a:hover, .footer-container a:focus{
-  color: rgba(255,0,0, 0.7);
+  color: rgba(255,255,255);
 }
 
 
@@ -413,5 +424,30 @@ footer{
   .work-img-block{
     order:-1;
     min-width: 80%;
+  }
+}
+
+@media (max-width:700px) {
+  .header-home-nav{
+    left: 20px;
+  }
+  .header-home-nav a{
+    font-size: 1.1rem;
+  }
+  .hamburger-icon, .hamburger-icon::before, .hamburger-icon::after{
+    width: 30px;
+    height: 3px;
+  }
+  .hamburger-btn{
+    top: 40px;
+    right: 40px;
+  }
+  .hamburger-icon:hover, .hamburger-icon:focus{
+    width: 25px;
+  }
+  .footer-container .block{
+    display: block;
+    min-width: 90%;
+    margin-bottom: 50px;
   }
 }
