@@ -29,14 +29,16 @@ $(document).ready(function(){
     $('#header-right-nav-2').toggleClass('active');
     $('.hamburger-btn2').toggleClass('toggle');
 
-    var ariaAttribute = document.getElementById("#header-right-nav-2").getAttribute("aria-hidden");
-    if(ariaAttribute == "true"){
-      ariaAttribute = "false";
+    var ariaAttribute2 = document.getElementById("#header-right-nav-2").getAttribute("aria-hidden");
+    if(ariaAttribute2 == "true"){
+      ariaAttribute2 = "false";
+      rightNav2.style.opacity = "100";
     }
     else{
-      ariaAttribute = "true";
+      ariaAttribute2 = "true";
+      rightNav2.style.opacity = "0";
     }
-    document.querySelector(".header-right-nav").setAttribute("aria-hidden", ariaAttribute);
+    document.querySelector("#header-right-nav-2").setAttribute("aria-hidden", ariaAttribute2);
 
   })
 })
