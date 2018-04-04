@@ -45,8 +45,8 @@
   left: 30%;
 }
 
-#see-projects-space{
-  margin-top: 10vh;
+#see-aboutme-page{
+  margin-top: 5vh;
   text-align: center;
 }
 
@@ -58,5 +58,12 @@
   to{
     opacity: 1;
     transform: translateX(100px);
+  }
+}
+
+@media (max-width: 500px) {
+  .index-title{
+    top: 20%;
+    left:2rem;
   }
 }
