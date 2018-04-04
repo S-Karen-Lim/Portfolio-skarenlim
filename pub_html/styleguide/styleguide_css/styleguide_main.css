@@ -70,20 +70,38 @@ section{
   display: block;
 }
 
-#header-right-nav-2{
-  opacity: 0;
+.header-right-nav-2{
+  position: absolute;
+  top: -170px;
+  right: 4rem;
+  text-align: left;
+  background-color: white;
+  padding: 2rem;
+  z-index: 0;
+  -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    transition: .5s ease-in;
+    opacity: 0;
 }
 
-#header-right-nav-2 a{
+.active{
+  top: 60px;
+  box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
+  opacity: 1;
+}
+
+.header-right-nav-2 a{
   text-decoration: none;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   font-style: oblique;
+  display: block;
   align-self: flex-end;
 }
-
 .hamburger-btn2{
   border: none;
   background: transparent;
@@ -106,10 +124,10 @@ section{
   background-color: rgba(0, 0, 255, 0.7);
 }
 
-.active{
+.active2{
   top: 60px;
   box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
-  opacity: 100;
+  opacity: 1;
 }
 
 .hamburger-btn2.toggle .hamburger-icon{

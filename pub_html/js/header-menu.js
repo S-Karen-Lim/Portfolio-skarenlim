@@ -20,25 +20,25 @@ $(document).ready(function(){
 })
 
 
-//for the styleguide
+//for the styleguide header
 
-var rightNav2 = document.querySelector("#header-right-nav-2");
+var rightNav2 = document.querySelector(".header-right-nav-2");
 
 $(document).ready(function(){
   $('.hamburger-btn2').click(function(){
-    $('#header-right-nav-2').toggleClass('active');
+    $('.header-right-nav-2').toggleClass('active2');
     $('.hamburger-btn2').toggleClass('toggle');
 
-    var ariaAttribute2 = document.getElementById("#header-right-nav-2").getAttribute("aria-hidden");
+    var ariaAttribute2 = document.querySelector(".header-right-nav-2").getAttribute("aria-hidden");
     if(ariaAttribute2 == "true"){
       ariaAttribute2 = "false";
-      rightNav2.style.opacity = "100";
+      rightNav2.style.opacity = "1";
     }
     else{
       ariaAttribute2 = "true";
       rightNav2.style.opacity = "0";
     }
-    document.querySelector("#header-right-nav-2").setAttribute("aria-hidden", ariaAttribute2);
-
+    document.querySelector(".header-right-nav-2").setAttribute("aria-hidden", ariaAttribute2);
+    rightNav2.style.opacity = "1";
   })
 })
