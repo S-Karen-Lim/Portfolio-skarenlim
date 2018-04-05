@@ -35,10 +35,18 @@ h2{
 }
 
 h3{
-  color:  rgba(255,0,0, 0.7);
+  color: rgba(255,0,0, 0.7);
   font-weight: 400;
   font-size: 0.9rem;
   font-style: oblique;
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: rgba(255,0,0, 0.7);
 }
 
 p{
