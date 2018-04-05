@@ -19,6 +19,11 @@
   height: 80vh;
 }
 
+#resume-block object, #resume-block iframe{
+  width: 100%;
+  height: 80vh;
+}
+
 @media (max-width: 1200px) {
   .resume-section{
     display: block;
