@@ -1,5 +1,4 @@
-// citation : https://www.youtube.com/watch?v=7-sohNdOT4o
-var rightNav = document.querySelector(".header-right-nav");
+// citation:https://www.youtube.com/watch?v=7-sohNdOT4o
 
 $(document).ready(function(){
   $('.hamburger-btn').click(function(){
@@ -7,7 +6,7 @@ $(document).ready(function(){
     $('.header-right-nav').toggleClass('active');
     $('.hamburger-btn').toggleClass('toggle');
 
-    // citation: http://www.davidmacd.com/blog/toggle-aria-expanded-javascript.html
+    //citation:http://www.davidmacd.com/blog/toggle-aria-expanded-javascript.html
     var ariaAttribute = document.querySelector(".header-right-nav").getAttribute("aria-hidden");
     if(ariaAttribute == "true"){
       ariaAttribute = "false";
@@ -16,8 +15,8 @@ $(document).ready(function(){
       ariaAttribute = "true";
     }
     document.querySelector(".header-right-nav").setAttribute("aria-hidden", ariaAttribute);
-  })
-})
+  });
+});
 
 
 //for the styleguide header
@@ -40,5 +39,5 @@ $(document).ready(function(){
     }
     document.querySelector(".header-right-nav-2").setAttribute("aria-hidden", ariaAttribute2);
     rightNav2.style.opacity = "1";
-  })
-})
+  });
+});

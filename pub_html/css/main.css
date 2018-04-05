@@ -190,7 +190,6 @@ header{
   z-index: 3;
   height: 40px;
   width: 45px;
-  padding: none;
 }
 
 .hamburger-icon{
@@ -199,7 +198,7 @@ header{
   height: 4px;
   display: block;
   position: absolute;
-  margin: none;
+  margin: 0;
   transition: all 0.3s;
   pointer-events: none;
 }
@@ -271,7 +270,7 @@ footer{
 }
 
 .footer-container a:hover, .footer-container a:focus{
-  color: rgba(255,255,255);
+  color: rgb(255,255,255);
 }
 
 

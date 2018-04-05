@@ -112,7 +112,6 @@ section{
   z-index: 3;
   height: 40px;
   width: 45px;
-  padding: none;
 }
 
 .hamburger-btn2:focus, .hamburger-btn2:hover{
