@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="../css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="../css/main.css" type="text/css" />
   <link rel="stylesheet" href="styleguide_css/styleguide_main.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i" rel="stylesheet" />
+  <link rel="preload" href="../css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/fonts.css"></noscript>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/header-menu.js"></script>
@@ -326,7 +328,7 @@
         </div>
         <div class="block work-img-block">
           <a href="#">
-            <img src="img/small-img/loadingImg_potfolio.png" data-src="../img/borneo-sp/BS_titleImg.jpg" class="lazyload blur" alt="title image of borneo-sporenburg project"/>
+            <img src="../img/small-img/loadingImg_portfolio.png" data-src="../img/borneo-sp/BS_titleImg.jpg" class="lazyload blur" alt="title image of borneo-sporenburg project"/>
             <noscript><img src="../img/borneo-sp/BS_titleImg.jpg" alt="title image of borneo-sporenburg project"/></noscript>
           </a>
         </div>
@@ -396,6 +398,6 @@
   </div>
         <a href="../references.html" class="intext-link">References</a>
 </footer>
-
+<script src="../js/lazysizes.min.js"></script>
 </body>
 </html>
